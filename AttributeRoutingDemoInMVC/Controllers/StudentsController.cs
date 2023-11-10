@@ -72,18 +72,5 @@ namespace AttributeRoutingDemoInMVC.Controllers
 
             return View();
         }
-
-
-        [Route("~/tech/teachers")]
-        public ActionResult GetTeachers()
-        {
-            List<Teacher> teachers = new List<Teacher>()
-            {
-                new Teacher() { Id = 1, Name = "James" },
-                new Teacher() { Id = 2, Name = "Patrik" },
-                new Teacher() { Id = 3, Name = "Smith" }
-            };
-            return View(teachers);
-        }
     }
 }
